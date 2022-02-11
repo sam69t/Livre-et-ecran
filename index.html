@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Lire & Ecran</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <span>Livre & écran, quelle expérience pour la lecture ? </span>
+      <span id="info">Play</span>
+    </header>
+    <div class="pause"></div>
+    <div class="backward"></div>
+    <div class="foward"></div>
+
+    <div class="video-wrapper">
+      <video
+        id="memoire"
+        class="video-v"
+        nocontrols
+        autoplay
+        muted
+        playsinline
+        noloop
+      >
+        <source src="assets/memoire.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <footer>
+      <span id="un">1 </span>
+      <span id="deux">2-3 </span>
+      <span id="trois">3-4 </span>
+      <span id="quatre">5-6 </span>
+      <span id="cinq">7-8 </span>
+      <span id="six">9-10 </span>
+      <span id="sept">11-12 </span>
+      <span id="huit">13-14 </span>
+      <span id="neuf">15-16 </span>
+      <span id="dix">17 </span>
+    </footer>
+
+    <div id="speed"></div>
+    <!-- <div class="debug-left"></div>
+    <div class="debug-right"></div>
+    <div class="debug-middle"></div> -->
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js" async defer></script>
+  </body>
+</html>
