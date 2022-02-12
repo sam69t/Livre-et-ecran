@@ -1,62 +1,85 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Lire & Ecran</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <title>CodePen - &quot;Moving image&quot; on scroll effect</title>
+
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <span>Livre & écran, quelle expérience pour la lecture ? </span>
-      <span id="info">Play</span>
-    </header>
-    <div class="pause"></div>
-    <div class="backward"></div>
-    <div class="foward"></div>
+    <!-- partial:index.partial.html -->
+    <!-- Blocking page render before all image loads is not a good idea -->
+    <link rel="preload" as="image" href="assets/30.jpg" />
+    <link rel="preload" as="image" href="assets/31.jpg" />
+    <link rel="preload" as="image" href="assets/32.jpg" />
+    <link rel="preload" as="image" href="assets/33.jpg" />
+    <link rel="preload" as="image" href="assets/34.jpg" />
+    <link rel="preload" as="image" href="assets/35.jpg" />
+    <link rel="preload" as="image" href="assets/36.jpg" />
+    <link rel="preload" as="image" href="assets/37.jpg" />
+    <link rel="preload" as="image" href="assets/38.jpg" />
+    <link rel="preload" as="image" href="assets/39.jpg" />
+    <link rel="preload" as="image" href="assets/40.jpg" />
+    <link rel="preload" as="image" href="assets/41.jpg" />
+    <link rel="preload" as="image" href="assets/42.jpg" />
+    <link rel="preload" as="image" href="assets/43.jpg" />
+    <link rel="preload" as="image" href="assets/44.jpg" />
+    <link rel="preload" as="image" href="assets/45.jpg" />
+    <link rel="preload" as="image" href="assets/46.jpg" />
+    <link rel="preload" as="image" href="assets/48.jpg" />
+    <link rel="preload" as="image" href="assets/49.jpg" />
+    <link rel="preload" as="image" href="assets/50.jpg" />
+    <link rel="preload" as="image" href="assets/51.jpg" />
+    <link rel="preload" as="image" href="assets/52.jpg" />
+    <link rel="preload" as="image" href="assets/53.jpg" />
+    <link rel="preload" as="image" href="assets/54.jpg" />
+    <link rel="preload" as="image" href="assets/55.jpg" />
+    <link rel="preload" as="image" href="assets/56.jpg" />
+    <link rel="preload" as="image" href="assets/57.jpg" />
+    <link rel="preload" as="image" href="assets/58.jpg" />
+    <link rel="preload" as="image" href="assets/59.jpg" />
+    <link rel="preload" as="image" href="assets/60.jpg" />
+    <link rel="preload" as="image" href="assets/61.jpg" />
+    <link rel="preload" as="image" href="assets/62.jpg" />
+    <link rel="preload" as="image" href="assets/63.jpg" />
+    <link rel="preload" as="image" href="assets/64.jpg" />
+    <link rel="preload" as="image" href="assets/65.jpg" />
+    <link rel="preload" as="image" href="assets/66.jpg" />
+    <link rel="preload" as="image" href="assets/67.jpg" />
+    <link rel="preload" as="image" href="assets/68.jpg" />
+    <link rel="preload" as="image" href="assets/69.jpg" />
+    <link rel="preload" as="image" href="assets/70.jpg" />
+    <link rel="preload" as="image" href="assets/71.jpg" />
+    <link rel="preload" as="image" href="assets/72.jpg" />
+    <link rel="preload" as="image" href="assets/73.jpg" />
+    <link rel="preload" as="image" href="assets/74.jpg" />
+    <link rel="preload" as="image" href="assets/75.jpg" />
+    <link rel="preload" as="image" href="assets/76.jpg" />
+    <link rel="preload" as="image" href="assets/77.jpg" />
+    <link rel="preload" as="image" href="assets/78.jpg" />
+    <link rel="preload" as="image" href="assets/79.jpg" />
+    <link rel="preload" as="image" href="assets/80.jpg" />
+    <link rel="preload" as="image" href="assets/81.jpg" />
+    <link rel="preload" as="image" href="assets/82.jpg" />
+    <link rel="preload" as="image" href="assets/83.jpg" />
+    <link rel="preload" as="image" href="assets/84.jpg" />
+    <link rel="preload" as="image" href="assets/85.jpg" />
+    <link rel="preload" as="image" href="assets/86.jpg" />
+    <link rel="preload" as="image" href="assets/87.jpg" />
+    <link rel="preload" as="image" href="assets/88.jpg" />
+    <link rel="preload" as="image" href="assets/89.jpg" />
 
-    <div class="video-wrapper">
-      <video
-        id="memoire"
-        class="video-v"
-        nocontrols
-        autoplay
-        muted
-        playsinline
-        noloop
-      >
-        <source src="assets/memoire.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <div class="container">
+      <div class="image-container"></div>
+      <!-- <div class="text-container">
+        <div class="subtitle" id="line1">These lines float in one by one</div>
+        <div class="title" id="line2">How to make</div>
+        <div class="title" id="line3">Moving background</div>
+        <div class="subtitle" id="line4">Disappear again when scroll top</div>
+      </div> -->
     </div>
-    <footer>
-      <span id="un">1 </span>
-      <span id="deux">2-3 </span>
-      <span id="trois">3-4 </span>
-      <span id="quatre">5-6 </span>
-      <span id="cinq">7-8 </span>
-      <span id="six">9-10 </span>
-      <span id="sept">11-12 </span>
-      <span id="huit">13-14 </span>
-      <span id="neuf">15-16 </span>
-      <span id="dix">17 </span>
-    </footer>
-
-    <div id="speed"></div>
-    <!-- <div class="debug-left"></div>
-    <div class="debug-right"></div>
-    <div class="debug-middle"></div> -->
-
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
-
-    <script src="js/jquery.js"></script>
-    <script src="js/script.js" async defer></script>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
