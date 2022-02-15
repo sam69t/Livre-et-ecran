@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>CodePen - &quot;Moving image&quot; on scroll effect</title>
+    <title>Livre & Ecran</title>
 
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- partial:index.partial.html -->
     <!-- Blocking page render before all image loads is not a good idea -->
-    <link rel="preload" as="image" href="assets/30.jpg" />
+    <!-- <link rel="preload" as="image" href="assets/30.jpg" />
     <link rel="preload" as="image" href="assets/31.jpg" />
     <link rel="preload" as="image" href="assets/32.jpg" />
     <link rel="preload" as="image" href="assets/33.jpg" />
@@ -67,10 +67,12 @@
     <link rel="preload" as="image" href="assets/86.jpg" />
     <link rel="preload" as="image" href="assets/87.jpg" />
     <link rel="preload" as="image" href="assets/88.jpg" />
-    <link rel="preload" as="image" href="assets/89.jpg" />
+    <link rel="preload" as="image" href="assets/89.jpg" /> -->
 
     <div class="container">
-      <div class="image-container"></div>
+      <div class="image-container">
+        <img id="pic" nerror="this.style.display='none'" />
+      </div>
       <!-- <div class="text-container">
         <div class="subtitle" id="line1">These lines float in one by one</div>
         <div class="title" id="line2">How to make</div>

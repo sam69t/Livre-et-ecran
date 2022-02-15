@@ -1,95 +1,66 @@
 // Images asset
-const fruitImages = {
-  1: "assets/30.jpg",
-  2: "assets/31.jpg",
-  3: "assets/32.jpg",
-  4: "assets/33.jpg",
-  5: "assets/34.jpg",
-  6: "assets/35.jpg",
-  7: "assets/36.jpg",
-  8: "assets/37.jpg",
-  9: "assets/38.jpg",
-  10: "assets/39.jpg",
-  11: "assets/40.jpg",
-  12: "assets/41.jpg",
-  13: "assets/42.jpg",
-  14: "assets/43.jpg",
-  15: "assets/44.jpg",
-  16: "assets/45.jpg",
-  17: "assets/46.jpg",
-  18: "assets/47.jpg",
-  19: "assets/48.jpg",
-  20: "assets/49.jpg",
-  21: "assets/50.jpg",
-  22: "assets/51.jpg",
-  23: "assets/52.jpg",
-  24: "assets/53.jpg",
-  25: "assets/54.jpg",
-  26: "assets/55.jpg",
-  27: "assets/56.jpg",
-  28: "assets/57.jpg",
-  29: "assets/58.jpg",
-  30: "assets/59.jpg",
-  31: "assets/60.jpg",
-  32: "assets/61.jpg",
-  33: "assets/62.jpg",
-  34: "assets/63.jpg",
-  35: "assets/64.jpg",
-  36: "assets/65.jpg",
-  37: "assets/66.jpg",
-  38: "assets/67.jpg",
-  39: "assets/68.jpg",
-  40: "assets/69.jpg",
-  41: "assets/70.jpg",
-  42: "assets/71.jpg",
-  43: "assets/72.jpg",
-  44: "assets/73.jpg",
-  45: "assets/74.jpg",
-  46: "assets/75.jpg",
-  47: "assets/76.jpg",
-  48: "assets/77.jpg",
-  49: "assets/78.jpg",
-  50: "assets/79.jpg",
-  51: "assets/80.jpg",
-  52: "assets/81.jpg",
-  53: "assets/82.jpg",
-  54: "assets/83.jpg",
-  55: "assets/84.jpg",
-  56: "assets/85.jpg",
-  57: "assets/86.jpg",
-  58: "assets/87.jpg",
-  59: "assets/88.jpg",
-  // 60: "assets/59.jpg",
-  // 61: "assets/60.jpg",
-  // 62: "assets/61.jpg",
-  // 63: "assets/62.jpg",
-  // 64: "assets/38.jpg",
-  // 65: "assets/39.jpg",
-  // 66: "assets/40.jpg",
-  // 67: "assets/41.jpg",
-  // 68: "assets/42.jpg",
-  // 69: "assets/43.jpg",
-  // 70: "assets/44.jpg",
-  // 71: "assets/45.jpg",
-  // 72: "assets/46.jpg",
-  // 73: "assets/47.jpg",
-  // 74: "assets/48.jpg",
-  // 75: "assets/50.jpg",
-  // 76: "assets/51.jpg",
-  // 77: "assets/52.jpg",
-  // 78: "assets/53.jpg",
-  // 79: "assets/54.jpg",
-  // 80: "assets/55.jpg",
-  // 81: "assets/56.jpg",
-  // 82: "assets/57.jpg",
-  // 83: "assets/58.jpg",
-  // 84: "assets/59.jpg",
-  // 85: "assets/60.jpg",
-  // 86: "assets/61.jpg",
-  // 87: "assets/59.jpg",
-  // 88: "assets/60.jpg",
-  // 89: "assets/61.jpg",
-};
+
+// const fruitImages = {
+//   1: "assets/30.jpg",
+//   2: "assets/31.jpg",
+//   3: "assets/32.jpg",
+//   4: "assets/33.jpg",
+//   5: "assets/34.jpg",
+//   6: "assets/35.jpg",
+//   7: "assets/36.jpg",
+//   8: "assets/37.jpg",
+//   9: "assets/38.jpg",
+//   10: "assets/39.jpg",
+//   11: "assets/40.jpg",
+//   12: "assets/41.jpg",
+//   13: "assets/42.jpg",
+//   14: "assets/43.jpg",
+//   15: "assets/44.jpg",
+//   16: "assets/45.jpg",
+//   17: "assets/46.jpg",
+//   18: "assets/47.jpg",
+//   19: "assets/48.jpg",
+//   20: "assets/49.jpg",
+//   21: "assets/50.jpg",
+//   22: "assets/51.jpg",
+//   23: "assets/52.jpg",
+//   24: "assets/53.jpg",
+//   25: "assets/54.jpg",
+//   26: "assets/55.jpg",
+//   27: "assets/56.jpg",
+//   28: "assets/57.jpg",
+//   29: "assets/58.jpg",
+//   30: "assets/59.jpg",
+//   31: "assets/60.jpg",
+//   32: "assets/61.jpg",
+//   33: "assets/62.jpg",
+//   34: "assets/63.jpg",
+//   35: "assets/64.jpg",
+//   36: "assets/65.jpg",
+//   37: "assets/66.jpg",
+//   38: "assets/67.jpg",
+//   39: "assets/68.jpg",
+//   40: "assets/69.jpg",
+//   41: "assets/70.jpg",
+//   42: "assets/71.jpg",
+//   43: "assets/72.jpg",
+//   44: "assets/73.jpg",
+//   45: "assets/74.jpg",
+//   46: "assets/75.jpg",
+//   47: "assets/76.jpg",
+//   48: "assets/77.jpg",
+//   49: "assets/78.jpg",
+//   50: "assets/79.jpg",
+//   51: "assets/80.jpg",
+//   52: "assets/81.jpg",
+//   53: "assets/82.jpg",
+//   54: "assets/83.jpg",
+//   55: "assets/84.jpg",
+//   56: "assets/85.jpg",
+//   57: "assets/86.jpg",
+//   58: "assets/87.jpg",
+//   59: "assets/88.jpg",
+// };
 // Text style—
 // const textStyle = {
 //   1: { opacity: 0, transform: "0px" },
@@ -115,15 +86,26 @@ const fruitImages = {
 // };
 
 // Global variable to control the scrolling behavior
-const step = 30; // For each 30px, change an image
+const step = 50; // For each 30px, change an image
+let lastStep = null;
 
-function trackScrollPosition() {
+// console.log(fruitImages);
+function trackScrollPosition(img) {
   const y = window.scrollY;
-  const label = Math.min(Math.floor(y / 59) + 1, 59);
-  const imageToUse = fruitImages[label];
+  const label = Math.min(Math.floor(y / 262) + 1, 262);
+
+  // const imageToUse = fruitImages[label];
   console.log(label);
+  const labelForImg = label + 19;
+  const imageToUse = "assets/" + labelForImg + ".jpg";
+  console.log(label);
+
+  if (lastStep != labelForImg) {
+    img.setAttribute("src", imageToUse);
+    // $(".image-container").css("background-image", `url('${imageToUse}')`);
+    lastStep = labelForImg;
+  }
   // Change the background image
-  $(".image-container").css("background-image", `url('${imageToUse}')`);
   // Change the text style
   // const textStep = 2;
   // const textStyleToUseLine1 = textStyle[label];
@@ -152,9 +134,10 @@ function trackScrollPosition() {
 }
 
 $(document).ready(() => {
+  const img = document.getElementById("pic");
   // register an event listener on window
   $(window).scroll(() => {
     // We don't need to use 'event' as the scroll exist in window
-    trackScrollPosition();
+    trackScrollPosition(img);
   });
 });
