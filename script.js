@@ -92,11 +92,11 @@ let lastStep = null;
 // console.log(fruitImages);
 function trackScrollPosition(img) {
   const y = window.scrollY;
-  const label = Math.min(Math.floor(y / 262) + 1, 262);
+  const label = Math.min(Math.floor(y / 180) + 1, 2585);
 
   // const imageToUse = fruitImages[label];
   console.log(label);
-  const labelForImg = label + 19;
+  const labelForImg = label;
   const imageToUse = "assets/" + labelForImg + ".jpg";
   console.log(label);
 
