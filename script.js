@@ -28,6 +28,8 @@ function trackScrollPosition(img) {
 
   if (lastStep != labelForImg) {
     img.setAttribute("src", imageToUse);
+    img.setAttribute("loading", "lazy");
+
     // $(".image-container").css("background-image", `url('${imageToUse}')`);
     lastStep = labelForImg;
   }
