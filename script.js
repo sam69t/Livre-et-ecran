@@ -3,13 +3,12 @@ $(document).ready(function () {
   $(window).scrollTop(0);
 });
 // Global variable to control the scrolling behavior
-const step = 50; // For each 30px, change an image
 let lastStep = null;
 
 // console.log(fruitImages);
 function trackScrollPosition(img) {
   const y = window.scrollY;
-  const label = Math.min(Math.floor(y / 120) + 1, 2585);
+  const label = Math.min(Math.floor(y / 100), 2585);
 
   // const imageToUse = fruitImages[label];
   const labelForImg = label;
@@ -23,13 +22,11 @@ function trackScrollPosition(img) {
   }
 
   if (label <= 65) {
-    console.log("go");
     $("header > span:nth-child(1)").css("opacity", "1");
   } else {
     $("header > span:nth-child(1)").css("opacity", "0.3");
   }
   if (label >= 65) {
-    console.log("go");
     $("header > span:nth-child(1)").css("opacity", "0.3");
 
     $("header > span:nth-child(2)").css("opacity", "1");
@@ -38,7 +35,6 @@ function trackScrollPosition(img) {
   }
 
   if (label >= 130) {
-    console.log("go");
     $("header > span:nth-child(2)").css("opacity", "0.3");
 
     $("header > span:nth-child(3)").css("opacity", "1");
@@ -47,7 +43,6 @@ function trackScrollPosition(img) {
   }
 
   if (label >= 190) {
-    console.log("go");
     $("header > span:nth-child(3)").css("opacity", "0.3");
 
     $("header > span:nth-child(4)").css("opacity", "1");
@@ -56,7 +51,6 @@ function trackScrollPosition(img) {
   }
 
   if (label >= 260) {
-    console.log("go");
     $("header > span:nth-child(4)").css("opacity", "0.3");
 
     $("header > span:nth-child(5)").css("opacity", "1");
@@ -64,7 +58,6 @@ function trackScrollPosition(img) {
     $("header > span:nth-child(5)").css("opacity", "0.3");
   }
   if (label >= 340) {
-    console.log("go");
     $("header > span:nth-child(5)").css("opacity", "0.3");
 
     $("header > span:nth-child(6)").css("opacity", "1");
@@ -73,20 +66,220 @@ function trackScrollPosition(img) {
   }
 
   if (label >= 420) {
-    console.log("go");
     $("header > span:nth-child(6)").css("opacity", "0.3");
 
     $("header > span:nth-child(7)").css("opacity", "1");
   } else {
     $("header > span:nth-child(7)").css("opacity", "0.3");
   }
-  if (label >= 500) {
-    console.log("go");
+  if (label >= 450) {
     $("header > span:nth-child(7)").css("opacity", "0.3");
 
     $("header > span:nth-child(8)").css("opacity", "1");
   } else {
     $("header > span:nth-child(8)").css("opacity", "0.3");
+  }
+  if (label >= 540) {
+    $("header > span:nth-child(8)").css("opacity", "0.3");
+
+    $("header > span:nth-child(9)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(9)").css("opacity", "0.3");
+  }
+
+  if (label >= 600) {
+    $("header > span:nth-child(9)").css("opacity", "0.3");
+
+    $("header > span:nth-child(10)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(10)").css("opacity", "0.3");
+  }
+  if (label >= 680) {
+    $("header > span:nth-child(10)").css("opacity", "0.3");
+
+    $("header > span:nth-child(11)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(11)").css("opacity", "0.3");
+  }
+  if (label >= 750) {
+    $("header > span:nth-child(11)").css("opacity", "0.3");
+
+    $("header > span:nth-child(12)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(12)").css("opacity", "0.3");
+  }
+  if (label >= 820) {
+    $("header > span:nth-child(12)").css("opacity", "0.3");
+
+    $("header > span:nth-child(13)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(13)").css("opacity", "0.3");
+  }
+  if (label >= 905) {
+    $("header > span:nth-child(13)").css("opacity", "0.3");
+
+    $("header > span:nth-child(14)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(14)").css("opacity", "0.3");
+  }
+
+  if (label >= 1005) {
+    $("header > span:nth-child(14)").css("opacity", "0.3");
+
+    $("header > span:nth-child(15)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(15)").css("opacity", "0.3");
+  }
+
+  if (label >= 1075) {
+    $("header > span:nth-child(15)").css("opacity", "0.3");
+
+    $("header > span:nth-child(16)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(16)").css("opacity", "0.3");
+  }
+  if (label >= 1150) {
+    $("header > span:nth-child(16)").css("opacity", "0.3");
+
+    $("header > span:nth-child(17)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(17)").css("opacity", "0.3");
+  }
+
+  if (label >= 1220) {
+    $("header > span:nth-child(17)").css("opacity", "0.3");
+
+    $("header > span:nth-child(18)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(18)").css("opacity", "0.3");
+  }
+
+  if (label >= 1295) {
+    $("header > span:nth-child(18)").css("opacity", "0.3");
+
+    $("header > span:nth-child(19)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(19)").css("opacity", "0.3");
+  }
+  if (label >= 1370) {
+    $("header > span:nth-child(19)").css("opacity", "0.3");
+
+    $("header > span:nth-child(20)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(20)").css("opacity", "0.3");
+  }
+  if (label >= 1445) {
+    $("header > span:nth-child(20)").css("opacity", "0.3");
+
+    $("header > span:nth-child(21)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(21)").css("opacity", "0.3");
+  }
+  if (label >= 1540) {
+    $("header > span:nth-child(21)").css("opacity", "0.3");
+
+    $("header > span:nth-child(22)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(22)").css("opacity", "0.3");
+  }
+  if (label >= 1615) {
+    $("header > span:nth-child(22)").css("opacity", "0.3");
+
+    $("header > span:nth-child(23)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(23)").css("opacity", "0.3");
+  }
+
+  if (label >= 1700) {
+    $("header > span:nth-child(23)").css("opacity", "0.3");
+
+    $("header > span:nth-child(24)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(24)").css("opacity", "0.3");
+  }
+
+  if (label >= 1775) {
+    $("header > span:nth-child(24)").css("opacity", "0.3");
+
+    $("header > span:nth-child(25)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(25)").css("opacity", "0.3");
+  }
+  if (label >= 1845) {
+    $("header > span:nth-child(25)").css("opacity", "0.3");
+
+    $("header > span:nth-child(26)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(26)").css("opacity", "0.3");
+  }
+
+  if (label >= 1915) {
+    $("header > span:nth-child(26)").css("opacity", "0.3");
+
+    $("header > span:nth-child(27)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(27)").css("opacity", "0.3");
+  }
+  if (label >= 1980) {
+    $("header > span:nth-child(27)").css("opacity", "0.3");
+
+    $("header > span:nth-child(28)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(28)").css("opacity", "0.3");
+  }
+
+  if (label >= 2075) {
+    $("header > span:nth-child(28)").css("opacity", "0.3");
+
+    $("header > span:nth-child(29)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(29)").css("opacity", "0.3");
+  }
+
+  if (label >= 2150) {
+    $("header > span:nth-child(29)").css("opacity", "0.3");
+
+    $("header > span:nth-child(30)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(30)").css("opacity", "0.3");
+  }
+  if (label >= 2215) {
+    $("header > span:nth-child(30)").css("opacity", "0.3");
+
+    $("header > span:nth-child(31)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(31)").css("opacity", "0.3");
+  }
+
+  if (label >= 2310) {
+    $("header > span:nth-child(31)").css("opacity", "0.3");
+
+    $("header > span:nth-child(32)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(32)").css("opacity", "0.3");
+  }
+
+  if (label >= 2405) {
+    $("header > span:nth-child(32)").css("opacity", "0.3");
+
+    $("header > span:nth-child(33)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(33)").css("opacity", "0.3");
+  }
+  if (label >= 2475) {
+    $("header > span:nth-child(33)").css("opacity", "0.3");
+
+    $("header > span:nth-child(34)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(34)").css("opacity", "0.3");
+  }
+
+  if (label >= 2555) {
+    $("header > span:nth-child(34)").css("opacity", "0.3");
+
+    $("header > span:nth-child(35)").css("opacity", "1");
+  } else {
+    $("header > span:nth-child(35)").css("opacity", "0.3");
   }
   $(".start").click(function () {
     // $("body").scrollTop(1300);
@@ -102,7 +295,7 @@ function trackScrollPosition(img) {
   $(".end").click(function () {
     $("body").scrollTop(5000);
     window.scrollBy({
-      top: 309500, // could be negative
+      top: 260000, // could be negative
       left: 0,
       behavior: "smooth",
     });
