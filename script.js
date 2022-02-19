@@ -5,6 +5,17 @@ $(document).ready(function () {
 // Global variable to control the scrolling behavior
 let lastStep = null;
 
+let images = new Array(2585);
+
+function preLoad() {
+  for (var i = 0; i < 2585; i++) {
+    images[i] = new Image();
+    images[i].src = "assets/" + i + ".jpg";
+    console.log(i);
+  }
+}
+preLoad(images);
+
 // console.log(fruitImages);
 function trackScrollPosition(img) {
   const y = window.scrollY;
@@ -13,7 +24,7 @@ function trackScrollPosition(img) {
   // const imageToUse = fruitImages[label];
   const labelForImg = label;
   const imageToUse = "assets/" + labelForImg + ".jpg";
-  console.log(label, window.scrollY);
+  // console.log(label, window.scrollY);
 
   if (lastStep != labelForImg) {
     img.setAttribute("src", imageToUse);
@@ -305,7 +316,7 @@ function trackScrollPosition(img) {
   $(".button").click(function () {
     // $("body").scrollTop(1300);
     window.scrollBy({
-      top: 25000, // could be negative
+      top: 7000, // could be negative
       left: 0,
       behavior: "smooth",
     });
