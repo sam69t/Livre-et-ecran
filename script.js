@@ -10,14 +10,14 @@ let images = new Array(2585);
 const observer = lozad();
 observer.observe();
 
-function preLoad() {
-  for (var i = 0; i < 2585; i++) {
-    images[i] = new Image();
-    images[i].src = "assets/" + i + ".jpg";
-    console.log(i);
-  }
-}
-preLoad(images);
+// function preLoad() {
+//   for (var i = 0; i < 2585; i++) {
+//     images[i] = new Image();
+//     images[i].src = "assets/" + i + ".jpg";
+//     console.log(i);
+//   }
+// }
+// preLoad(images);
 
 // console.log(fruitImages);
 function trackScrollPosition(img) {
