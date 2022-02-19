@@ -7,6 +7,9 @@ let lastStep = null;
 
 let images = new Array(2585);
 
+const observer = lozad();
+observer.observe();
+
 function preLoad() {
   for (var i = 0; i < 2585; i++) {
     images[i] = new Image();
