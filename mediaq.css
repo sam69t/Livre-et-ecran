@@ -1,12 +1,12 @@
 /* ONLY DESKTOP */
-@media (max-width: 1024px) {
+@media (max-width: 1324px) {
   body > *:not(.disclaimer) {
     display: none;
     visibility: hidden;
   }
   .disclaimer {
     display: flex !important;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
   }
 }
