@@ -11,10 +11,13 @@ body {
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: "Unica";
 }
+::-webkit-scrollbar {
+  display: none !important;
+}
 
 .video-container {
   position: fixed;
-  display: none;
+  display: flex;
   backdrop-filter: blur(3px);
   justify-content: center;
   top: 0;
@@ -25,7 +28,19 @@ body {
   height: 100vh;
   object-fit: cover;
   transform: scale(1);
-  z-index: 10;
+  z-index: 1000000;
+}
+
+.top {
+  z-index: 99999999999999999;
+}
+video {
+  top: 25%;
+  position: absolute;
+  display: none;
+}
+.video-container {
+  display: none;
 }
 video {
   max-width: 50%;
