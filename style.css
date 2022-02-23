@@ -56,7 +56,7 @@ body {
 .entrer {
   position: fixed;
   display: none;
-  top: 45%;
+  top: 43%;
   left: 0;
 
   right: 0;
@@ -132,7 +132,7 @@ video {
   z-index: -1;
   top: 0;
   background-size: cover;
-  background-image: url("assets/38.jpg");
+  /* background-image: url("assets/38.jpg"); */
   transform: rotate(0deg);
 }
 .container .text-container {

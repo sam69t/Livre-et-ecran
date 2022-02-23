@@ -27,6 +27,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
     document.getElementById("expl").style.opacity = num;
 
     document.getElementById("loader").textContent = progress + "%";
+    document.getElementById("title").textContent =
+      "Chargement..." + progress + "%";
 
     if (progress == 100) {
       window.scrollBy({
@@ -34,6 +36,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
         left: 0,
         behavior: "smooth",
       });
+
+      document.getElementById("title").textContent = "Livre & écran";
+      document.getElementById("loader").textContent = "Terminer";
 
       $(".entrer").css("display", "flex");
 
