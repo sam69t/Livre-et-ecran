@@ -1,4 +1,6 @@
 window.addEventListener("DOMContentLoaded", (event) => {
+  $(window).scrollTop(0);
+
   let queue = new createjs.LoadQueue(false);
   let images = new Array(2585);
 
@@ -27,6 +29,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
     document.getElementById("loader").textContent = progress + "%";
 
     if (progress == 100) {
+      window.scrollBy({
+        top: 0, // could be negative
+        left: 0,
+        behavior: "smooth",
+      });
+
       $(".entrer").css("display", "flex");
 
       $(".entrer").click(function () {
@@ -43,7 +51,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 
   function preLoad() {
-    for (var i = 0; i < 2585; i++) {
+    for (var i = 0; i < 640; i++) {
       // images[i] = new Image();
       // images[i].src = "assets/" + i + ".jpg";
       queue.loadFile("assets/" + i + ".jpg");

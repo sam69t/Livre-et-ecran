@@ -291,6 +291,13 @@ header > span:nth-child(1) {
 header > span:nth-child(36) {
   display: none;
 }
+
+.start {
+  opacity: 0 !important;
+}
+.end {
+  opacity: 0 !important;
+}
 /* IPHONE */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
