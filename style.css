@@ -49,6 +49,14 @@ body {
   transition: 500ms ease-in-out;
 }
 
+#loader {
+  opacity: 0;
+  transition: 300ms ease;
+}
+.opapa {
+  opacity: 1 !important;
+}
+
 .enter {
   cursor: pointer;
 }

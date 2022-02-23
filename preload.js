@@ -2,6 +2,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
   let queue = new createjs.LoadQueue(false);
   let images = new Array(2585);
 
+  setTimeout(() => {
+    $("#loader").addClass("opapa");
+  }, 5000);
+
   const container = document.querySelector(".container");
   var el = document.getElementById("preloadjs-container");
 
@@ -37,7 +41,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 
   function preLoad() {
-    for (var i = 0; i < 200; i++) {
+    for (var i = 0; i < 2585; i++) {
       // images[i] = new Image();
       // images[i].src = "assets/" + i + ".jpg";
       queue.loadFile("assets/" + i + ".jpg");
