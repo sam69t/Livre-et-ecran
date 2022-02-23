@@ -7,20 +7,19 @@ window.addEventListener("DOMContentLoaded", (event) => {
   // Global variable to control the scrolling behavior
   let lastStep = null;
 
-  let images = new Array(2585);
+  // let images = new Array(2585);
 
   const observer = lozad();
   observer.observe();
 
-  let preload;
+  // function preLoad() {
+  //   for (var i = 0; i < 2585; i++) {
+  //     images[i] = new Image();
+  //     images[i].src = "assets/" + i + ".jpg";
+  //   }
+  // }
 
-  function preLoad() {
-    for (var i = 0; i < 2585; i++) {
-      images[i] = new Image();
-      images[i].src = "assets/" + i + ".jpg";
-    }
-  }
-
+  // preLoad();
   // preload = preLoad();
 
   // preload.onprogress = (event) => {
