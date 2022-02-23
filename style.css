@@ -56,7 +56,7 @@ body {
 .entrer {
   position: fixed;
   display: none;
-  top: 50%;
+  top: 45%;
   left: 0;
 
   right: 0;
@@ -67,6 +67,7 @@ body {
   font-size: 100px;
   cursor: pointer;
   opacity: 0.3;
+  padding-bottom: 5vh;
 }
 .entrer:hover {
   opacity: 1;
