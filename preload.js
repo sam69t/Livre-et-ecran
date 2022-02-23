@@ -2,9 +2,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
   let queue = new createjs.LoadQueue(false);
   let images = new Array(2585);
 
-  setTimeout(() => {
-    $("#loader").addClass("opapa");
-  }, 5000);
+  // setTimeout(() => {
+  //   $("#loader").addClass("opapa");
+  // }, 5000);
 
   const container = document.querySelector(".container");
   var el = document.getElementById("preloadjs-container");
@@ -27,11 +27,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
     document.getElementById("loader").textContent = progress + "%";
 
     if (progress == 100) {
-      document.getElementById("loader").textContent = "Entrer";
-      $("#loader").addClass("enter");
+      $(".entrer").css("display", "flex");
 
-      $(".enter").click(function () {
+      $(".entrer").click(function () {
         $(".home").css("opacity", "0");
+        $(".entrer").css("display", "none");
+        $("body").css("overflow-y", "scroll");
+
         console.log("click");
         setTimeout(() => {
           $(".home").css("display", "none");
