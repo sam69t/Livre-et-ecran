@@ -355,6 +355,12 @@ function trackScrollPosition(img) {
     $(".plus-down > div:nth-child(1)").css("opacity", "0");
     $(".plus-down > div:nth-child(2)").css("opacity", "0");
   }
+
+  if (label >= 70) {
+    $(".bibliographie").css("opacity", "0");
+  } else {
+    $(".bibliographie").css("opacity", "1");
+  }
   if (label >= 550) {
     $(".plus-down > div:nth-child(1)").css("opacity", "1");
     $(".plus-down > div:nth-child(1)").css("cursor", "pointer");

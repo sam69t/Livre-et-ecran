@@ -43,6 +43,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
       $(".entrer").css("display", "flex");
 
       $(".entrer").click(function () {
+        $(".bibliographie").css("opacity", "1");
+
         $(".home").css("opacity", "0");
         $(".entrer").css("display", "none");
         $("body").css("overflow-y", "scroll");
