@@ -1,8 +1,10 @@
+let queue = new createjs.LoadQueue(false);
+let images = new Array(2585);
+
 window.addEventListener("DOMContentLoaded", (event) => {
   $(window).scrollTop(0);
 
   let queue = new createjs.LoadQueue(false);
-  let images = new Array(2585);
 
   // setTimeout(() => {
   //   $("#loader").addClass("opapa");

@@ -6,6 +6,8 @@ $(document).ready(function () {
 // Global variable to control the scrolling behavior
 let lastStep = null;
 
+let pre = false;
+
 // let images = new Array(2585);
 
 const observer = lozad();
@@ -332,14 +334,15 @@ function trackScrollPosition(img) {
     // $(window).scrollTop(300000);
   });
   $(".button").click(function () {
-    // $("body").scrollTop(1300);
-    // window.scrollBy({
-    //   top: 7000, // could be negative
-    //   left: 0,
-    //   behavior: "smooth",
-    // });
     window.scrollBy({
-      top: 17000, // could be negative
+      top: 8000, // could be negative
+      left: 0,
+      behavior: "smooth",
+    });
+  });
+  $(".back-button").click(function () {
+    window.scrollBy({
+      top: -8000, // could be negative
       left: 0,
       behavior: "smooth",
     });
@@ -356,43 +359,92 @@ function trackScrollPosition(img) {
     $(".plus-down > div:nth-child(2)").css("opacity", "0");
   }
 
-  if (label >= 70) {
-    $(".bibliographie").css("opacity", "0");
+  if (label >= 200) {
+    pre = true;
   } else {
-    $(".bibliographie").css("opacity", "1");
   }
+  ///
+
+  //! MARKER CORNER PLUS ++++
+
+  if (label >= 70) {
+    $("li").css("opacity", "0.3");
+  } else {
+    $("li").css("opacity", "0.3");
+  }
+
   if (label >= 550) {
+    $(".bibl > li:nth-child(5)").css("opacity", "1");
+
+    $(".bibl > li:nth-child(10)").css("opacity", "0.3");
+
+    $(".plus-down > div:nth-child(1)").css("opacity", "1");
+
     $(".plus-down > div:nth-child(1)").css("opacity", "1");
     $(".plus-down > div:nth-child(1)").css("cursor", "pointer");
   } else {
     $(".plus-down > div:nth-child(1)").css("opacity", "0");
     $(".plus-down > div:nth-child(1)").css("cursor", "default");
   }
+  if (label >= 635) {
+    $(".bibl > li:nth-child(5)").css("opacity", "0.3");
+    $(".bibl > li:nth-child(10)").css("opacity", "1");
+  }
   if (label >= 695) {
+    $(".bibl > li:nth-child(10)").css("opacity", "0.3");
+    $(".bibl > li:nth-child(5)").css("opacity", "0.3");
+
     $(".plus-down > div:nth-child(1)").css("cursor", "default");
     $(".plus-down > div:nth-child(1)").css("opacity", "0");
-  } else {
   }
 
-  if (label >= 760) {
+  if (label >= 775) {
     $(".plus-down > div:nth-child(1)").css("opacity", "1");
-  } else {
+    $(".bibl > li:nth-child(5)").css("opacity", "1");
+  }
+  if (label >= 845) {
+    $(".bibl > li:nth-child(5)").css("opacity", "0.3");
+    $(".bibl > li:nth-child(10)").css("opacity", "1");
+  }
+  if (label >= 930) {
+    $(".bibl > li:nth-child(5)").css("opacity", "0.3");
+  }
+  if (label >= 1030) {
+    $(".bibl > li:nth-child(10)").css("opacity", "0.3");
+
+    $(".bibl > li:nth-child(9)").css("opacity", "1");
   }
   if (label >= 1100) {
+    $(".bibl > li:nth-child(9)").css("opacity", "1");
+
+    $(".bibl > li:nth-child(8)").css("opacity", "1");
+
     $(".plus-down > div:nth-child(1)").css("opacity", "0");
   } else {
   }
   if (label >= 1100) {
-    $(".plus-down > div:nth-child(2)").css("opacity", "1");
+    $(".bibl > li:nth-child(2)").css("opacity", "0.3");
+    $(".bibl > li:nth-child(9)").css("opacity", "0.3");
+    $(".bibl > li:nth-child(8)").css("opacity", "0.3");
   } else {
   }
-  if (label >= 1220) {
+  if (label >= 1160) {
+    $(".plus-down > div:nth-child(2)").css("opacity", "1");
+    $(".bibl > li:nth-child(2)").css("opacity", "1");
+  }
+  if (label >= 1245) {
+    $(".bibl > li:nth-child(2)").css("opacity", "0.3");
+
     $(".plus-down > div:nth-child(2)").css("opacity", "0");
   } else {
   }
-  if (label >= 1380) {
+  if (label >= 1395) {
+    $(".bibl > li:nth-child(6)").css("opacity", "1");
     $(".plus-down > div:nth-child(1)").css("opacity", "1");
   } else {
+  }
+  if (label >= 1460) {
+    $(".bibl > li:nth-child(6)").css("opacity", "0.3");
   }
 
   if (label >= 1440) {
@@ -401,6 +453,8 @@ function trackScrollPosition(img) {
   }
 
   if (label > 1550 && label < 1630) {
+    $(".webo > li:nth-child(1)").css("opacity", "1");
+
     $(".plus-up > div:nth-child(1)").css("opacity", "1");
     $(".plus-down > div:nth-child(2)").css("opacity", "1");
     $(".plus-up > div:nth-child(1)").css("cursor", "pointer");
@@ -416,6 +470,8 @@ function trackScrollPosition(img) {
     // $(".plus-down > div:nth-child(2)").css("opacity", "0");
   }
   if (label > 1630 && label < 1700) {
+    $(".webo > li:nth-child(1)").css("opacity", "0.3");
+
     $(".plus-up > div:nth-child(1)").css("opacity", "0");
     $(".plus-down > div:nth-child(2)").css("opacity", "0");
 
@@ -431,6 +487,8 @@ function trackScrollPosition(img) {
     // $(".plus-up > div:nth-child(2)").css("opacity", "0");
   }
   if (label > 1700 && label < 1780) {
+    $(".webo > li:nth-child(2)").css("opacity", "1");
+
     $(".plus-up > div:nth-child(1)").css("opacity", "1");
 
     $(".video-container").click(function () {
@@ -449,6 +507,9 @@ function trackScrollPosition(img) {
   } else {
   }
   if (label >= 1850) {
+    $(".webo > li:nth-child(2)").css("opacity", "0.3");
+    $(".webo > li:nth-child(3)").css("opacity", "1");
+
     $(".plus-up > div:nth-child(1)").css("opacity", "1");
     $(".plus-up > div:nth-child(2)").css("opacity", "1");
     $(".plus-down > div:nth-child(2)").css("opacity", "0");
@@ -467,6 +528,10 @@ function trackScrollPosition(img) {
     });
   } else {
   }
+  if (label >= 2000) {
+    $(".webo > li:nth-child(3)").css("opacity", "0.3");
+    $(".webo > li:nth-child(4)").css("opacity", "1");
+  }
   if (label >= 2080) {
     $(".plus-up > div:nth-child(1)").css("opacity", "0");
     $(".plus-up > div:nth-child(2)").css("opacity", "1");
@@ -477,18 +542,56 @@ function trackScrollPosition(img) {
     $(".plus-up > div:nth-child(2)").css("opacity", "0");
   } else {
   }
-  if (label >= 2315) {
+  if (label >= 2170) {
+    $(".webo > li:nth-child(4)").css("opacity", "0.3");
+    $(".webo > li:nth-child(5)").css("opacity", "1");
+  }
+  if (label >= 2230) {
+    $(".webo > li:nth-child(5)").css("opacity", "0.3");
+    $(".webo > li:nth-child(6)").css("opacity", "1");
+  }
+  if (label >= 2330) {
+    $(".webo > li:nth-child(7)").css("opacity", "1");
+    $(".webo > li:nth-child(8)").css("opacity", "1");
+    $(".webo > li:nth-child(9)").css("opacity", "1");
+    $(".webo > li:nth-child(10)").css("opacity", "1");
+
     $(".plus-up > div:nth-child(1)").css("opacity", "1");
     $(".plus-up > div:nth-child(2)").css("opacity", "1");
     $(".plus-down > div:nth-child(1)").css("opacity", "1");
     $(".plus-down > div:nth-child(2)").css("opacity", "1");
   }
   if (label >= 2405) {
+    $(".webo > li:nth-child(6)").css("opacity", "0.3");
+
+    $(".webo > li:nth-child(7)").css("opacity", "0.3");
+    $(".webo > li:nth-child(8)").css("opacity", "0.3");
+    $(".webo > li:nth-child(9)").css("opacity", "0.3");
+    $(".webo > li:nth-child(10)").css("opacity", "0.3");
+
     $(".plus-up > div:nth-child(1)").css("opacity", "0");
     $(".plus-up > div:nth-child(2)").css("opacity", "0");
     $(".plus-down > div:nth-child(1)").css("opacity", "0");
     $(".plus-down > div:nth-child(2)").css("opacity", "0");
   }
+  if (label >= 2570) {
+    $("li").css("opacity", "1");
+  }
+
+  //! MARKER CORNER PLUS ++++
+
+  // if (pre == true) {
+  //   function preLoad() {
+  //     for (var i = 640; i < 1200; i++) {
+  //       images[i] = new Image();
+  //       images[i].src = "assets/" + i + ".jpg";
+  //       // queue.loadFile("assets/" + i + ".jpg");
+  //       console.log("loading");
+  //     }
+  //   }
+  //   preLoad();
+  //   console.log("preloadnextimg");
+  // }
 
   $(document).ready(function () {
     var scrollTop = $(".scrollTop");
