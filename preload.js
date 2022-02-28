@@ -60,7 +60,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 
   function preLoad() {
-    for (var i = 0; i < 640; i++) {
+    for (var i = 0; i < 2040; i++) {
       // images[i] = new Image();
       // images[i].src = "assets/" + i + ".jpg";
       queue.loadFile("assets/" + i + ".jpg");
